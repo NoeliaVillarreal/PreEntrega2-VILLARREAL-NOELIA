@@ -21,24 +21,32 @@
 
         <!-- Logo min + boton de buscador -->
         <div class="encabezado"> 
-          <ul>
+          <ul class="gridencab">
              <li><img class="logomin" src="../Media/L.logo.png" alt="Logo icono"></li> 
-                    <form action="botonbuscador">
-                         <input type="search" placeholder="Buscar productos...">
-                           <button type="Buscar producto..."> <img src="./Media/lupa.png" alt="Lupa Buscador" width="15px"></button>
-                    </form>
+             <li><form action="botonbuscador">
+                      <input type="search" placeholder="Buscar productos...">
+                        <button type="Buscar producto..."> <img src="./Media/lupa.png" alt="Lupa Buscador" width="15px"></button>
+                  </form>
+              </li>
           </ul>
         </div>
 
  <!-- BARRA NAVEGADORA SUPERIOR  -->
  
-   <nav class="checkmenu">
-       <ul class="menu1">
-           <li class="navmenu1"><a href="../Pages/Nosotras.html" title="Sobre Nosotros">Sobre Nosotros</a></li>
-           <li class="navmenu1"><a href="../Pages/contacto.html" title="Contacto">Contacto</a></li>
-           <li class="navmenu1"><a href="../Pages/politicas.html" title="Políticas">Políticas</a></li>
-           <li class="navmenu1"><a href="../Pages/comocomprar.html" title="Cómo Comprar">Cómo comprar</a></li>
+   <nav class="navbar navbar-expand-sm navbar-lighter ">
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#opciones">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse" id="opciones">
+        <ul class="navbar-nav">
+          <li class="nav-item"><a class= "nav-link" href="../Pages/Nosotras.html" title="Sobre Nosotros">Sobre Nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="../Pages/contacto.html" title="Contacto">Contacto</a></li>
+          <li class="nav-item"><a class="nav-link" href="../Pages/politicas.html" title="Políticas">Políticas</a></li>
+          <li class="nav-item"><a class="nav-link" href="../Pages/comocomprar.html" title="Cómo Comprar">Cómo comprar</a></li>
        </ul>
+      </div>
    </nav>
    <br>
 </header>
@@ -74,9 +82,13 @@
       <span class="visually-hidden">Next</span>
     </button>
       </div>
+    <section class="banner">
+      <div class="BotonesBanner"><a href="">Best Seller</a></div>
+      <div class="BotonBanner2"><a href="">Todos los Productos</a></div>
+    </section>
   </div>
 
-   <section class="banner">
+<!--    <section class="banner">
       <div class="BotonesBanner">
         <a href="">Best Seller</a>
       </div>
@@ -84,7 +96,7 @@
       <div class="BotonBanner2">
         <a href="">Todos los Productos</a>
       </div>
-      </section>
+      </section> -->
 
     <!-- PRODUCTOS / 3 CATEGORIAS -->
 

@@ -29,7 +29,6 @@ h3{
     justify-content: center;
     align-items: center;
     font-weight: bold;
-
 }
 
 figcaption{
@@ -42,34 +41,32 @@ figcaption{
 
 /* PAGINA DE INICIO */
 /* NAVEGADOR SUPERIOR */
-.menu1{
-    color: black;
+.navbar-nav{
+/*     color: rgb(0, 0, 0);
     background-color: rgb(230, 230, 230);
     padding: 10px;
     font-weight: bold;
-    display: block;
-    position: sticky;
+    display: flex;
+    justify-content: center;
     top: 0;
+    text-align: center; */
+    background-color: rgb(180, 180, 180);
     text-align: center;
-}
-.navmenu1{
-    display: inline;
-    padding: 20px;
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+    font-weight: bolder;
+    
+    
     
 }
+
 
 .encabezado{
     display: flex;
     justify-content: space-around;
 }
 
-
-
-@media (max-width: 400px) and (max-width: 700px){
-    .checkmenu:checked~ul{
-        display: block;
-    }
-}
 
 
 /* PARTE SUPERIOR */
@@ -105,10 +102,37 @@ figcaption{
     color: rgb(0, 0, 0); opacity: 80%; font-style: oblique;
 }
 
+@media (min-width: 400px) and (max-width: 700px) {
+ .piedepagina{
+   height: 50px;
+ }
+ .gridencab {
+   display: flex;
+   justify-content: space-around;
+ }
+
+ .gridencab li form input{
+    width: 200px;
+    margin-left: 40px;
+    margin-right: 40px;
+ }
+
+ .gridencab li form {
+    margin-right: 30px;
+ }
+
+
+}
+    
+
 
 /* Botones de Banner */
+
 .banner{
     align-items: center;
+    position: relative;
+    justify-content: center;
+    
     
 }
 .BotonesBanner{
@@ -334,3 +358,6 @@ textarea{
     margin-top: 40px;
     gap: 10px;
 }
+
+
+
