@@ -42,23 +42,12 @@ figcaption{
 /* PAGINA DE INICIO */
 /* NAVEGADOR SUPERIOR */
 .navbar-nav{
-/*     color: rgb(0, 0, 0);
-    background-color: rgb(230, 230, 230);
-    padding: 10px;
-    font-weight: bold;
-    display: flex;
-    justify-content: center;
-    top: 0;
-    text-align: center; */
     background-color: rgb(180, 180, 180);
     text-align: center;
     width: 100vw;
     display: flex;
     justify-content: space-around;
     font-weight: bolder;
-    
-    
-    
 }
 
 
@@ -102,7 +91,7 @@ figcaption{
     color: rgb(0, 0, 0); opacity: 80%; font-style: oblique;
 }
 
-@media (min-width: 400px) and (max-width: 700px) {
+@media (min-width: 300px) and (max-width: 700px) {
  .piedepagina{
    height: 50px;
  }
@@ -132,8 +121,6 @@ figcaption{
     align-items: center;
     position: relative;
     justify-content: center;
-    
-    
 }
 .BotonesBanner{
     margin-left: 500px;
@@ -155,6 +142,11 @@ figcaption{
     align-items: center;
 }
 
+@media (min-width: 300px) and (max-width: 700px) {
+    .carousel-item{
+        width: auto;
+    }
+}
 
 /* NUEVA COLECCION */
 .productosdest{
@@ -172,7 +164,16 @@ figcaption{
      
 }
 
-
+@media (min-width: 300px) and (max-width: 700px) {
+    .productosdest{
+        width: auto;
+        height: 980px;
+}
+    .productos1{
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+    }
+}
 /* ACCESORIOS */
 .prodaccesorios{
     width: 100%;
@@ -186,6 +187,16 @@ figcaption{
     grid-template-columns: repeat(5, 240px);
 }
 
+@media (min-width: 300px) and (max-width: 700px){
+    .prodaccesorios{
+        width: auto;
+        height: 980px;
+    }
+    .productos2{
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+    }
+}
 
 /* LOS MAS BUSCADOS- 6 PRODUCTOS */
 .losbuscados{
@@ -201,42 +212,40 @@ figcaption{
     grid-template-columns: repeat(5, 240px);
 
 }
+@media (min-width: 300px) and (max-width: 700px){
+    .losbuscados{
+        width: auto;
+        height: 980px;
+    }
+    .productos3{
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+    }
+}
 
 
 /* FORMULARIO */
 .formtitle{
-    margin-left: 40px;
+    grid-area: formtitle;
 }
 
-.newsl{
-    display: flex;
-    justify-content: space-around;
 
-}
 
 .formtext{
-    width: 500px;
-  text-align: justify;
-  margin-top: 15px;
+  grid-area: formtext;
 }
 
 button{
     margin-left: 5px;
     text-align: left;
-    border: 1px solid rgb(63, 63, 63);
+    border: 1px solid rgb(180, 180, 180);
     border-radius: 2mm;
     position: absolute;
-    background-color: rgb(63, 63, 63);
+    background-color: rgb(180, 180, 180);
     color: white;
     text-align: center;
     padding: 10px;
     font-weight: bold;
-}
-
-.newslet{
-    margin: 0 auto;
-    padding: 20px;
-    background-color: rgb(230, 230, 230);
 }
 
 input{
@@ -244,17 +253,44 @@ input{
     padding: 10px;
     width: 350px;
     border-radius: 2mm;
-
 }
 
 .newbutton{
-    display: flex;
-    gap: 80px;
-    margin-right: 80px;
+    grid-area: newbutton;
 }
 
 .newbutton li button:hover{
     background-color: gray;
+}
+
+.newbutton li button{
+    margin-top: 10px;
+}
+
+.newslet{
+    padding: 25px;
+    background-color: rgb(230, 230, 230);
+    justify-content: space-around;
+    display: grid;
+    grid-template-columns: 200px repeat(2, 400px);
+    grid-template-rows: repeat(2,50px);
+    grid-template-areas: 
+    "formtitle formtext newbutton"
+    "none formtext newbutton"
+    ;
+}
+@media (min-width: 300px) and (max-width: 700px){
+    .newslet{
+        display: grid;
+        grid-template-columns: repeat(2, 200px);
+        grid-template-rows: 80px 170px;
+        grid-template-areas: 
+        "formtitle newbutton"
+        "formtext newbutton";
+    }
+    .newbutton li input{
+        width: 37vw;
+    }
 }
 
 
@@ -271,11 +307,13 @@ input{
 
 
 .elementosf{
+    row-gap: 10px;
     display: grid;
     grid-template-columns: repeat(5, 285px);
-    grid-template-rows: repeat(5, 150px);
-    row-gap: 10px;
-    
+    grid-template-rows: repeat(1, 300px);
+    grid-template-areas: 
+    "columna1 columna2 columna3 columna4 columna5"
+    ;
 }
 
 
@@ -289,12 +327,62 @@ color: white;
 border-radius: 2mm;
 padding: 8px;
 text-align: center;
+grid-area: columna1;
 }
 
 .columna1 a:hover{
     background-color: gray;
 }
 
+.columna1 h3{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.columna2{
+    grid-area: columna2;
+}
+
+.columna2 h3{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.columna3{
+    grid-area: columna3;
+}
+
+.columna3 h3{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.columna4{
+    grid-area: columna4;
+}
+.columna4 h3{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.columna5{
+    grid-area: columna5;
+}
+.columna5 h3{
+    font-weight: bold;
+    text-transform: uppercase;
+}
+@media (min-width: 300px) and (max-width: 700px){
+    .elementosf{
+        display: grid;
+        grid-template-columns: repeat(3, 194px);
+        grid-template-rows: repeat(2, 300px);
+        grid-template-areas: 
+        "columna1 columna2 columna3"
+        "none columna4 columna5";
+    }
+
+}
 
 /* PAGINA SOBRE NOSOTROS */
 
