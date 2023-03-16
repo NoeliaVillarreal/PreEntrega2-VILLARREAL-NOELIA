@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contacto</title>
-    <link rel="stylesheet" href="./CSS/bootstrap.css">
+    <link rel="stylesheet" href="../CSS/bootstrap.css">
     <link rel="stylesheet" href="../CSS/style.css">
 </head>
 <body>
@@ -17,25 +17,32 @@
 
     <!-- Logo min + boton de buscador -->
     <div class="encabezado"> 
-      <ul>
-        <li><a href="../index.html"><img class="logomin" src="../Media/L.logo.png" alt="Logo icono"></li></a>
-                <form action="botonbuscador">
-                     <input type="search" placeholder="Buscar productos...">
-                       <button type="Buscar producto..."> <img src="../Media/lupa.png" alt="Lupa Buscador" width="15px"></button>
-                </form>
-         <!-- <li><nav class="botbuscador"> <img src="../Media/lupa.png" alt="Lupa Buscador" width="15px"> Buscar productos... </nav></li>  -->
-         <!-- <label for="nav"></label><input type="text" id="buscador" placeholder="Buscar productos..." > --> <!-- POSIBLE OPCION -->
+      <ul class="gridencab">
+         <li><img class="logomin" src="../Media/L.logo.png" alt="Logo icono"></li> 
+         <li><form action="botonbuscador">
+                  <input type="search" placeholder="Buscar productos...">
+                    <button type="Buscar producto..."> <img src="../Media/lupa.png" alt="Lupa Buscador" width="15px"></button>
+              </form>
+          </li>
       </ul>
     </div>
 
 <!-- BARRA NAVEGADORA SUPERIOR  -->
-<nav class="checkmenu">
-   <ul class="menu1">
-       <li class="navmenu1"><a href="../Pages/Nosotras.html" title="Sobre Nosotros">Sobre Nosotros</a></li>
-       <li class="navmenu1"><a href="../Pages/contacto.html" title="Contacto">Contacto</a></li>
-       <li class="navmenu1"><a href="../Pages/politicas.html" title="Políticas">Políticas</a></li>
-       <li class="navmenu1"><a href="../Pages/comocomprar.html" title="Cómo Comprar">Cómo comprar</a></li>
+<nav class="navbar navbar-expand-sm navbar-lighter ">
+
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#opciones">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+
+<div class="collapse navbar-collapse" id="opciones">
+   <ul class="navbar-nav">
+     <li class="nav-item"> <a class="nav-link" href="../index.html" title="Inicio">Inicio</a></li>
+     <li class="nav-item"><a class= "nav-link" href="../Pages/Nosotras.html" title="Sobre Nosotros">Sobre Nosotros</a></li>
+     <li class="nav-item"><a class="nav-link" href="../Pages/contacto.html" title="Contacto">Contacto</a></li>
+     <li class="nav-item"><a class="nav-link" href="../Pages/politicas.html" title="Políticas">Políticas</a></li>
+     <li class="nav-item"><a class="nav-link" href="../Pages/comocomprar.html" title="Cómo Comprar">Cómo comprar</a></li>
    </ul>
+</div>
 </nav>
 <br>
 </header>
@@ -54,20 +61,20 @@
     <form action=""></form>
     <ul class="form2">
         <li>
-            <label for="name">Nombre</label>
-            <input type="text" id="name" name="user_name">
+            <label for="name"></label>
+            <input type="text" id="name" name="user_name" placeholder="Nombre">
         </li>
         <li>
-            <label for="mail">Correo electronico</label>
-            <input type="text" id="name" name="user_mail">
+            <label for="mail"></label>
+            <input type="text" id="name" name="user_mail" placeholder="Correo electrónico">
         </li>
         <li>
-            <label for="phone">Telefono</label>
-            <input type="number" id="number" name="user_numb">
+            <label for="phone"></label>
+            <input type="text" id="number" name="user_numb" placeholder="Teléfono">
         </li>
         <li>
-            <label for="msg">Mensaje</label>
-            <textarea name="user_message" id="msg"></textarea>
+            <label for="msg"></label>
+            <textarea name="user_message" id="msg" placeholder="Ingrese aquí su mensaje"></textarea>
         </li>
         <li class="butform2">
             <button type="submit">ENVIAR</button>
@@ -119,5 +126,8 @@
       </div>
     
       </footer>
+
+
+      <script src="../JS/bootstrap.bundle.js"></script>
 </body>
 </html>

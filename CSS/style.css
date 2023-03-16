@@ -42,7 +42,7 @@ figcaption{
 /* PAGINA DE INICIO */
 /* NAVEGADOR SUPERIOR */
 .navbar-nav{
-    background-color: rgb(180, 180, 180);
+    background-color: rgb(230, 230, 230);
     text-align: center;
     width: 100vw;
     display: flex;
@@ -322,12 +322,13 @@ h4{
 }
 
 .columna1 a{
-background-color: rgb(63, 63, 63);
+background-color: rgb(180, 180, 180);
 color: white;
 border-radius: 2mm;
 padding: 8px;
 text-align: center;
 grid-area: columna1;
+
 }
 
 .columna1 a:hover{
@@ -337,6 +338,11 @@ grid-area: columna1;
 .columna1 h3{
     font-weight: bold;
     text-transform: uppercase;
+    margin-bottom: 17px;
+}
+
+.columna1{
+    margin-left: 20px;
 }
 
 .columna2{
@@ -390,16 +396,28 @@ grid-area: columna1;
     text-align: center;
     margin: 0px 200px;
     padding: 20px;
-    display: grid;
-    grid-template-rows: repeat(4 400px);
+    
 }
 
 .quienes p{
-    padding: 40px;
+    padding: 30px;
 }
 
 .quienes img{
     padding: 40px;
+    align-items: center;
+    
+}
+
+@media (min-width: 300px) and (max-width: 700px){
+    .quienes{
+        margin: auto;
+    }
+
+    .quienes img{
+        padding: 10px;
+        width: 300px;
+    }
 }
 
 
@@ -411,6 +429,14 @@ grid-area: columna1;
     flex-direction: column;
     gap: 15px;
     padding-top: 40px;
+}
+
+.linkcontacto h1{
+    font-weight: bold;
+}
+
+.linkcontacto a img{
+    margin-right: 20px;
 }
 
 .form2{
@@ -430,6 +456,17 @@ textarea{
     height: 200px;
 }
 
+@media (min-width: 300px) and (max-width: 700px){
+    textarea{
+        width: 300px;
+        height: 200px;
+        text-align: center;
+    }
+    .butform2{
+        margin-right: 100px;
+    }
+}
+
 /* PAGINA DE POLITICAS */
 
 .politicas1{
@@ -439,6 +476,9 @@ textarea{
     
 }
 
+.politicas1 h1{
+    font-weight: bold;
+}
 /* PAGINA COMO COMPRAR*/
 
 .comocomp{
@@ -446,6 +486,17 @@ textarea{
     margin-top: 40px;
     gap: 10px;
 }
+
+.comocomp li{
+    margin-bottom: 20px;
+}
+
+.comocomp h1{
+    font-weight: bold;
+}
+
+
+
 
 
 
