@@ -6,7 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Lola Stores</title> <!-- Lo que se va a ver en la pestaña del explorador -->
     <link rel="stylesheet" href="./CSS/bootstrap.css">
+<<<<<<< HEAD
     <link rel="stylesheet" href="./backup-css/style.css">
+=======
+    <link rel="stylesheet" href="./CSS/style.css">
+>>>>>>> dev
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,800;1,600&display=swap" rel="stylesheet">
 </head>
 
@@ -32,61 +36,87 @@
 
  <!-- BARRA NAVEGADORA SUPERIOR  -->
  
-   <nav class="checkmenu">
-       <ul class="menu1">
-           <li class="navmenu1"><a href="../Pages/Nosotras.html" title="Sobre Nosotros">Sobre Nosotros</a></li>
-           <li class="navmenu1"><a href="../Pages/contacto.html" title="Contacto">Contacto</a></li>
-           <li class="navmenu1"><a href="../Pages/politicas.html" title="Políticas">Políticas</a></li>
-           <li class="navmenu1"><a href="../Pages/comocomprar.html" title="Cómo Comprar">Cómo comprar</a></li>
-       </ul>
-   </nav>
+ <nav class="navbar navbar-expand-sm navbar-lighter ">
+
+  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#opciones">
+  <span class="navbar-toggler-icon"></span>
+  </button>
+
+<div class="collapse navbar-collapse" id="opciones">
+   <ul class="navbar-nav">
+     <li class="nav-item"><a class= "nav-link" href="../Pages/Nosotras.html" title="Sobre Nosotros">Sobre Nosotros</a></li>
+     <li class="nav-item"><a class="nav-link" href="../Pages/contacto.html" title="Contacto">Contacto</a></li>
+     <li class="nav-item"><a class="nav-link" href="../Pages/politicas.html" title="Políticas">Políticas</a></li>
+     <li class="nav-item"><a class="nav-link" href="../Pages/comocomprar.html" title="Cómo Comprar">Cómo comprar</a></li>
+   </ul>
+</div>
+</nav>
    <br>
 </header>
 
 <!-- BANNER Y BOTONES CENTRALES -->
 <main>
-   <section class="banner">
-      <div class="BotonesBanner">
-        <a href="">Best Seller</a>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="true">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
-
-      <div class="BotonBanner2">
-        <a href="">Todos los Productos</a>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="./Media/banner principal.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./Media/Banner2.png" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+          <img src="./Media/Banner3.png" class="d-block w-100" alt="...">
+        </div>
       </div>
-    </section>
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
 
     <!-- PRODUCTOS / 3 CATEGORIAS -->
 
      <section class="productosdest">
          <h1>LA NUEVA COLECCION</h1>
           <div class="productos1">
-              <figure><figcaption><img src="../Media/BODY.jpg" alt="Body Shine" width="189px"><br> Body Shine</figcaption></figure>
-              <figure><figcaption><img src="../Media/BUZO.jpg" alt="Buzo Art" width="189px"><br> Buzo Art</figcaption></figure>
-              <figure><figcaption><img src="../Media/CHALECO.jpg" alt="Chaleco Plateado" width="189px"><br> Chaleco Mia</figcaption></figure>
-              <figure><figcaption><img src="../Media/CORSET.jpg" alt="Corset Plateado" width="189px"><br> Corset Tina</figcaption></figure>
-              <figure><figcaption><img src="../Media/POLLERA.jpg" alt="Pollera Ecocuero" width="189px"><br> Pollera New</figcaption></figure>
+              <figure class="body"><figcaption><img src="../Media/BODY.jpg" alt="Body Shine"><br> Body Shine</figcaption></figure>
+              <figure class="buzo"><figcaption><img src="../Media/BUZO.jpg" alt="Buzo Art"><br> Buzo Art</figcaption></figure>
+              <figure class="chaleco"><figcaption><img src="../Media/CHALECO.jpg" alt="Chaleco Plateado"><br> Chaleco Mia</figcaption></figure>
+              <figure class="corset"><figcaption><img src="../Media/CORSET.jpg" alt="Corset Plateado"><br> Corset Tina</figcaption></figure>
+              <figure class="pollera"><figcaption><img src="../Media/POLLERA.jpg" alt="Pollera Ecocuero"><br> Pollera New</figcaption></figure>
           </div>
         
+
+          
      </section>
 
      <section class="prodaccesorios">
       <div class="productos2">
-          <img src="../Media/BASICS.png" alt="Basics" width="189px">
-          <figure><figcaption><img src="../Media/CINTO 1.jpg" alt="Cinto grande" width="189px"><br>Cinto Adda</figcaption></figure>
-          <figure><figcaption><img src="../Media/AROMATIZANTE.jpg" alt="Aromatizante" width="189px"><br> Aromatizante Sandia</figcaption></figure>
-          <figure><figcaption><img src="../Media/DIFUSOR.JPG" alt="Difusor" width="189px"><br>Difusor Vainilla</figcaption></figure>
-          <figure><figcaption><img src="../Media/AROS.jpg" alt="Varios Cintos" width="189px"><br>Aros Petty</figcaption></figure>
+          <img class="basic" src="../Media/BASICS.png" alt="Basics">
+          <figure class="cinto"><figcaption><img src="../Media/CINTO 1.jpg" alt="Cinto grande"><br>Cinto Adda</figcaption></figure>
+          <figure class="aromat"><figcaption><img src="../Media/AROMATIZANTE.jpg" alt="Aromatizante"><br> Aromatizante Sandia</figcaption></figure>
+          <figure class="difu"><figcaption><img src="../Media/DIFUSOR.JPG" alt="Difusor"><br>Difusor Vainilla</figcaption></figure>
+          <figure class="aros"><figcaption><img src="../Media/AROS.jpg" alt="Varios Cintos"><br>Aros Petty</figcaption></figure>
       </div>
      </section>
 
      <section class="losbuscados">
       <h2>LOS MAS BUSCADOS</h2>
        <div class="productos3">
-        <figure><figcaption><img src="../Media/SWATER 2.jpg" alt="Sweater hilo" width="189px"><br>Sweater Pia</figcaption></figure>
-        <figure><figcaption><img src="../Media/TOP MIA.jpg" alt="Top Mia" width="189px"><br> Top Mia</figcaption></figure>
-        <figure><figcaption><img src="../Media/VESTIDO.jpg" alt="Vestido" width="189px"><br> Vestido Reni</figcaption></figure>
-        <figure><figcaption><img src="../Media/SWEATER.jpg" alt="Sweater bicolor" width="189px"><br>Sweater Mary</figcaption></figure>
-        <figure><figcaption><img src="../Media/JEAN.JPG" alt="Jean" width="189px"><br>Wideleg Duki<figure><figcaption>
+        <figure><figcaption><img src="../Media/SWATER 2.jpg" alt="Sweater hilo"><br>Sweater Pia</figcaption></figure>
+        <figure><figcaption><img src="../Media/TOP MIA.jpg" alt="Top Mia"><br> Top Mia</figcaption></figure>
+        <figure><figcaption><img src="../Media/VESTIDO.jpg" alt="Vestido"><br> Vestido Reni</figcaption></figure>
+        <figure><figcaption><img src="../Media/SWEATER.jpg" alt="Sweater bicolor"><br>Sweater Mary</figcaption></figure>
+        <figure><figcaption><img src="../Media/JEAN.JPG" alt="Jean"><br>Wideleg Duki<figure><figcaption>
        </div>
      </section>
 
@@ -96,7 +126,7 @@
   <form action="" class="newslet">
     <h2 class="formtitle">Se parte del #CLUBLOLA</h2>
 
-    <div class="newsl">
+
       <p class="formtext">Suscribete a nuestro newsletter mensual para ser la primera en enterarte de nuestras ofertas y descuentos especiales que tenemos para ti.</p>
 
        <ul class="newbutton">
@@ -107,7 +137,7 @@
             <button type="submit">SUSCRIBIRSE</button>
           </li>
        </ul>
-   </div>
+  
   </form>
 </main>
 

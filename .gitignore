@@ -78,6 +78,15 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
-*.boostrap-5.2.3-dist
+
+
+
+# img
 *.img
+
+# folder
+*boostrap-5.2.3-dist
+*Media
+*JS
+
 # End of https://www.toptal.com/developers/gitignore/api/macos,windows,visualstudiocode
