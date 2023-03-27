@@ -9,6 +9,10 @@
     text-decoration: none;
 }
 
+body{
+    margin: 0;
+}
+
 a{
     color: black;
     font-family: 'Poppins', sans-serif;
@@ -33,14 +37,12 @@ figcaption{
     
 }
 
-
-
 /* PAGINA DE INICIO */
 /* NAVEGADOR SUPERIOR */
 .navbar-nav{
     background-color: rgb(230, 230, 230);
     text-align: center;
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: space-around;
     font-weight: bolder;
@@ -117,11 +119,6 @@ figcaption{
 
 /* Botones de Banner */
 
-.banner{
-    align-items: center;
-    position: relative;
-    justify-content: center;
-}
 .BotonesBanner{
     margin-left: 500px;
     margin-right: 500px;
@@ -160,9 +157,10 @@ figcaption{
 
 
 .productos1{
+    width: auto;
     margin: 15px;
     display: grid;
-    grid-template-columns: repeat(5, 240px);   
+    grid-template-columns: repeat(5, 20%);  
 }
 
 .productos1 figure figcaption img{
@@ -175,8 +173,7 @@ figcaption{
         height: 980px;
 }
     .productos1{
-        display: grid;
-        grid-template-columns: repeat(2, 200px);
+        grid-template-columns: repeat(2, 50%);
     }
 }
 /* ACCESORIOS */
@@ -188,8 +185,10 @@ figcaption{
 
 .productos2{
     margin: 15px;
+    margin-top: 55px;
     display: grid;
-    grid-template-columns: repeat(5, 240px);   
+    grid-template-columns: repeat(5, 20%);   
+
 }
 
 .productos2 figure figcaption img{
@@ -203,7 +202,7 @@ figcaption{
     }
     .productos2{
         display: grid;
-        grid-template-columns: repeat(2, 200px);
+        grid-template-columns: repeat(2, 50%);
     }
 }
 
@@ -218,7 +217,7 @@ figcaption{
 .productos3{
     margin: 15px;
     display: grid;
-    grid-template-columns: repeat(5, 240px);
+    grid-template-columns: repeat(5, 20%);  
 }
 
 .productos3 figure figcaption img{
@@ -231,7 +230,7 @@ figcaption{
     }
     .productos3{
         display: grid;
-        grid-template-columns: repeat(2, 200px);
+        grid-template-columns: repeat(2, 50%);
     }
 }
 
@@ -252,7 +251,7 @@ button{
     text-align: left;
     border: 1px solid rgb(180, 180, 180);
     border-radius: 2mm;
-    position: absolute;
+    /* position: absolute; */
     background-color: rgb(180, 180, 180);
     color: white;
     text-align: center;
@@ -319,14 +318,13 @@ input{
 
 
 .elementosf{
-    row-gap: 10px;
     display: grid;
-    grid-template-columns: repeat(5, 285px);
+    grid-template-columns: repeat(5, 100px);
     grid-template-rows: repeat(1, 300px);
     grid-template-areas: 
     "columna1 columna2 columna3 columna4 columna5"
     ;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 
@@ -393,9 +391,9 @@ grid-area: columna1;
 }
 @media (min-width: 300px) and (max-width: 700px){
     .elementosf{
-        display: grid;
-        grid-template-columns: repeat(2, 194px);
-        grid-template-rows: repeat(3, 300px);
+        grid-template-columns: repeat(2, 50%);
+        grid-template-rows: repeat(3, 250px);
+        text-align: center;
         grid-template-areas: 
         "columna1 columna2"
         "columna3 columna4"
