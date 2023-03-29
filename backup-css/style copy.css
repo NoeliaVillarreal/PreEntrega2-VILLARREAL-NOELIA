@@ -89,33 +89,6 @@ figcaption{
     color: rgb(0, 0, 0); opacity: 80%; font-style: oblique;
 }
 
-@media (min-width: 300px) and (max-width: 700px) {
- .piedepagina{
-   height: 50px;
- }
- .gridencab {
-   display: flex;
-   justify-content: space-around;
- }
-
- .gridencab li form input{
-    width: 200px;
-    margin-left: 40px;
-    margin-right: 40px;
- }
-
- .gridencab li form {
-    margin-right: 30px;
- }
-
- .encabezado input{
-    width: 250px;
- }
-
-
-}
-    
-
 
 /* Botones de Banner */
 
@@ -139,11 +112,6 @@ figcaption{
     align-items: center;
 }
 
-@media (min-width: 300px) and (max-width: 700px) {
-    .carousel-item{
-        width: auto;
-    }
-}
 
 /* NUEVA COLECCION */
 .productosdest{
@@ -152,7 +120,10 @@ figcaption{
     width: 100%;
     height: 400px;
     padding: 5px;
+}
 
+.productosdest h1{
+    margin-left: 15px;
 }
 
 
@@ -167,15 +138,6 @@ figcaption{
     width: 189px;
 }
 
-@media (min-width: 300px) and (max-width: 700px) {
-    .productosdest{
-        width: auto;
-        height: 980px;
-}
-    .productos1{
-        grid-template-columns: repeat(2, 50%);
-    }
-}
 /* ACCESORIOS */
 .prodaccesorios{
     width: 100%;
@@ -191,20 +153,11 @@ figcaption{
 
 }
 
+
 .productos2 figure figcaption img{
     width: 189px;
 }
 
-@media (min-width: 300px) and (max-width: 700px){
-    .prodaccesorios{
-        width: auto;
-        height: 980px;
-    }
-    .productos2{
-        display: grid;
-        grid-template-columns: repeat(2, 50%);
-    }
-}
 
 /* LOS MAS BUSCADOS- 6 PRODUCTOS */
 .losbuscados{
@@ -220,18 +173,11 @@ figcaption{
     grid-template-columns: repeat(5, 20%);  
 }
 
+.losbuscados h2{
+    margin-left: 15px;
+}
 .productos3 figure figcaption img{
     width: 189px;
-}
-@media (min-width: 300px) and (max-width: 700px){
-    .losbuscados{
-        width: auto;
-        height: 980px;
-    }
-    .productos3{
-        display: grid;
-        grid-template-columns: repeat(2, 50%);
-    }
 }
 
 
@@ -239,7 +185,6 @@ figcaption{
 .formtitle{
     grid-area: formtitle;
 }
-
 
 
 .formtext{
@@ -251,7 +196,6 @@ button{
     text-align: left;
     border: 1px solid rgb(180, 180, 180);
     border-radius: 2mm;
-    /* position: absolute; */
     background-color: rgb(180, 180, 180);
     color: white;
     text-align: center;
@@ -262,7 +206,7 @@ button{
 input{
     border: 1px solid black;
     padding: 10px;
-    width: 350px;
+    width: 75%;
     border-radius: 2mm;
 }
 
@@ -278,30 +222,23 @@ input{
     margin-top: 10px;
 }
 
+.newbutton li input{
+    text-align: center;
+    font-size: auto;
+}
 .newslet{
     padding: 25px;
     background-color: rgb(230, 230, 230);
-    justify-content: space-around;
+    justify-content: space-between;
+    text-align: center;
     display: grid;
-    grid-template-columns: 200px 400px 400px;
+    grid-template-columns: 20% 50% 30%;
     grid-template-rows: repeat(2,50px);
+    column-gap: 20px;
     grid-template-areas: 
     "formtitle formtext newbutton"
-    "none formtext newbutton"
+    "formtitle formtext newbutton"
     ;
-}
-@media (min-width: 360px) and (max-width: 720px){
-    .newslet{
-        display: grid;
-        grid-template-columns: repeat(2, 200px);
-        grid-template-rows: 80px 170px;
-        grid-template-areas: 
-        "formtitle newbutton"
-        "formtext newbutton";
-    }
-    .newbutton li input{
-        width: 37vw;
-    }
 }
 
 
@@ -389,26 +326,7 @@ grid-area: columna1;
     font-weight: bold;
     text-transform: uppercase;
 }
-@media (min-width: 300px) and (max-width: 700px){
-    .elementosf{
-        grid-template-columns: repeat(2, 50%);
-        grid-template-rows: repeat(3, 250px);
-        text-align: center;
-        grid-template-areas: 
-        "columna1 columna2"
-        "columna3 columna4"
-        "columna5 none";
-    }
 
-    .columna3{
-        margin-left: 15px;
-    }
-
-    .columna5{
-        margin-left: 15px;
-    }
-
-}
 
 /* PAGINA SOBRE NOSOTROS */
 
@@ -427,17 +345,6 @@ grid-area: columna1;
     padding: 40px;
     align-items: center;
     
-}
-
-@media (min-width: 300px) and (max-width: 700px){
-    .quienes{
-        margin: auto;
-    }
-
-    .quienes img{
-        padding: 10px;
-        width: 300px;
-    }
 }
 
 
@@ -476,17 +383,6 @@ textarea{
     height: 200px;
 }
 
-@media (min-width: 300px) and (max-width: 700px){
-    textarea{
-        width: 300px;
-        height: 200px;
-        text-align: center;
-    }
-    .butform2{
-        margin-right: 100px;
-    }
-}
-
 /* PAGINA DE POLITICAS */
 
 .politicas1{
@@ -517,5 +413,185 @@ textarea{
 
 
 
+@media (min-width: 360px) and (max-width: 580px) {
+    /* BANNER SUPERIOR Y BUSCADOR */
+    .piedepagina{
+        height: fit-content;
+    }
+    .encabezado form input{
+        width: fit-content;
+    }
 
+    /* MAIN CON PRODUCTOS */
+    .productosdest{
+        height: fit-content;
+    }
+    .productos1{
+        grid-template-columns: repeat(2, 165px);
+        justify-content: space-around;
+        
+    }
 
+    .productos1 figure figcaption img{
+        width: 150px;
+    }
+
+    .prodaccesorios{
+        height: fit-content;
+    }
+    .productos2{
+        grid-template-columns: repeat(2, 165px);
+        justify-content: space-around;
+    }
+    .productos2 figure figcaption img{
+        width: 150px;
+    }
+    .basic{
+        width: 150px;
+    }
+
+    .losbuscados{
+        height:fit-content;
+    
+    }
+    .productos3{
+        grid-template-columns: repeat(2, 165px);
+        justify-content: space-around;
+    }
+
+    .productos3 figure figcaption img{
+        width: 150px;
+    }
+
+    /* FORMULARIO SUSCRIPCION */
+
+    .newslet{
+        text-align: center;
+        grid-template-columns: 100%;
+        row-gap: 20px;
+        grid-template-areas: 
+        "formtitle"
+        "formtext"
+        "newbutton"
+        ;
+    }
+
+    .newbutton li input{
+        width: fit-content;
+    
+    }
+
+    .newbutton{
+        margin-top: 80px;
+        margin-right: 22px;
+    }
+
+    /* FOOTER */
+    .elementosf{
+        display: none;
+    }
+}
+
+@media (min-width: 581px) and (max-width: 780px) {
+    .productosdest{
+        height: fit-content;
+    }
+    .productos1{
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    .prodaccesorios{
+        height: fit-content;
+    }
+    .productos2{
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    .losbuscados{
+        height: fit-content;
+    }
+
+    .productos3{
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    .newslet{
+        text-align: center;
+        grid-template-columns: 100%;
+        row-gap: 20px;
+        grid-template-areas: 
+        "formtitle"
+        "formtext"
+        "newbutton"
+        ;
+    }
+
+    .newbutton li input{
+        width: fit-content;
+    
+    }
+
+    .newbutton{
+        margin-top: 40px;
+        margin-right: 22px;
+    }
+
+    .elementosf{
+        text-align: center;
+        grid-template-columns: repeat(3, 150px);
+        grid-template-rows: repeat(2, 280px);
+        grid-template-areas: 
+        "columna1 columna2 columna3"
+        "columna4 none columna5";
+    }
+
+}
+
+@media (min-width:781px) and (max-width:1000px) {
+    .productosdest{
+        height: fit-content;
+    }
+    .productos1{
+        grid-template-columns: repeat(3, 33%);
+    }
+
+    .prodaccesorios{
+        height: fit-content;
+    }
+    .productos2{
+        grid-template-columns: repeat(3, 33%);
+    }
+    .basic{
+        margin-left: 30px;
+    }
+
+    .losbuscados{
+        height: fit-content;
+    }
+    .productos3{
+        grid-template-columns: repeat(3, 33%);
+    }
+
+    .elementosf{
+        text-align: center;
+        grid-template-columns: repeat(5, 20%);
+        grid-template-areas: 
+        "columna1 columna2 columna3 columna4 columna5";
+    }
+
+    .newslet{
+        justify-content: center;
+        height: fit-content;
+        grid-template-columns: 150px 280px 200px;
+        column-gap: 20px;
+        grid-template-areas: 
+        "formtitle formtext newbutton";
+    }
+    .formtext{
+        font-size: small;
+    }
+
+    .newbutton li input{
+        font-size: small;
+    }
+}
