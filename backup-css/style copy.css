@@ -400,7 +400,6 @@ textarea{
 .comocomp{
     text-align: center;
     margin-top: 40px;
-    gap: 10px;
 }
 
 .comocomp li{
@@ -490,6 +489,34 @@ textarea{
     .elementosf{
         display: none;
     }
+
+    /* PAGINA QUIENES SOMOS */
+    .quienes{
+        margin: 0;
+    }
+    .quienes img{
+        width: 100%;
+    }
+
+    /* PAGINA CONTACTO */
+    textarea{
+        width: 100%;
+    }
+
+    /* PAGINA COMO COMPRAR */
+    .comocomp{
+        margin: 0;
+        font-size: small;
+        text-align: left;
+    }
+
+    .comocomp h1{
+        text-align: center;
+    }
+    .comocomp h2{
+        text-align: center;
+    }
+
 }
 
 @media (min-width: 581px) and (max-width: 780px) {
@@ -545,6 +572,33 @@ textarea{
         "columna4 none columna5";
     }
 
+    /* PAGINA QUIENES SOMOS */
+    .quienes{
+        margin: 0;
+    }
+    .quienes img{
+        width: 80%;
+    }
+
+    /* PAGINA CONTACTO */
+    textarea{
+        width: 100%;
+    }
+
+    /* PAGINA COMO COMPRAR */
+    .comocomp{
+        margin: 0;
+        font-size: small;
+        text-align: center;
+    }
+
+    .comocomp h1{
+        text-align: center;
+    }
+    .comocomp h2{
+        text-align: center;
+    }
+
 }
 
 @media (min-width:781px) and (max-width:1000px) {
@@ -593,5 +647,32 @@ textarea{
 
     .newbutton li input{
         font-size: small;
+    }
+
+    /* PAGINA QUIENES SOMOS */
+    .quienes{
+        margin: 0;
+    }
+    .quienes img{
+        width: 80%;
+    }
+
+    /* PAGINA CONTACTO */
+    textarea{
+        width: 100%;
+    }
+
+    /* PAGINA COMO COMPRAR */
+    .comocomp{
+        margin: 0;
+        font-size: small;
+        text-align: center;
+    }
+
+    .comocomp h1{
+        text-align: center;
+    }
+    .comocomp h2{
+        text-align: center;
     }
 }
