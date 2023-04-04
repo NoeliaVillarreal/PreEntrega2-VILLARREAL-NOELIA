@@ -1,0 +1,265 @@
+
+@media (min-width: 360px) and (max-width: 580px) {
+    /* BANNER SUPERIOR Y BUSCADOR */
+    .piedepagina{
+        height: fit-content;
+    }
+    .encabezado form input{
+        width: fit-content;
+    }
+
+    /* MAIN CON PRODUCTOS */
+    .productosdest{
+        height: fit-content;
+    }
+    .productos1{
+        grid-template-columns: repeat(2, 165px);
+        justify-content: space-around;
+        
+    }
+
+    .productos1 figure figcaption img{
+        width: 150px;
+    }
+
+    .prodaccesorios{
+        height: fit-content;
+    }
+    .productos2{
+        grid-template-columns: repeat(2, 165px);
+        justify-content: space-around;
+    }
+    .productos2 figure figcaption img{
+        width: 150px;
+    }
+    .basic{
+        width: 150px;
+    }
+
+    .losbuscados{
+        height:fit-content;
+    
+    }
+    .productos3{
+        grid-template-columns: repeat(2, 165px);
+        justify-content: space-around;
+    }
+
+    .productos3 figure figcaption img{
+        width: 150px;
+    }
+
+    /* FORMULARIO SUSCRIPCION */
+
+    .newslet{
+        text-align: center;
+        grid-template-columns: 100%;
+        row-gap: 20px;
+        grid-template-areas: 
+        "formtitle"
+        "formtext"
+        "newbutton"
+        ;
+    }
+
+    .newbutton li input{
+        width: fit-content;
+    
+    }
+
+    .newbutton{
+        margin-top: 80px;
+        margin-right: 22px;
+    }
+
+    /* FOOTER */
+    .elementosf{
+        display: none;
+    }
+
+    /* PAGINA QUIENES SOMOS */
+    .quienes{
+        margin: 0;
+    }
+    .quienes img{
+        width: 100%;
+    }
+
+    /* PAGINA CONTACTO */
+    textarea{
+        width: 100%;
+    }
+
+    /* PAGINA COMO COMPRAR */
+    .comocomp{
+        margin: 0;
+        font-size: small;
+        text-align: left;
+    }
+
+    .comocomp h1{
+        text-align: center;
+    }
+    .comocomp h2{
+        text-align: center;
+    }
+
+}
+
+@media (min-width: 581px) and (max-width: 780px) {
+    .productosdest{
+        height: fit-content;
+    }
+    .productos1{
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    .prodaccesorios{
+        height: fit-content;
+    }
+    .productos2{
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    .losbuscados{
+        height: fit-content;
+    }
+
+    .productos3{
+        grid-template-columns: repeat(2, 50%);
+    }
+
+    .newslet{
+        text-align: center;
+        grid-template-columns: 100%;
+        row-gap: 20px;
+        grid-template-areas: 
+        "formtitle"
+        "formtext"
+        "newbutton"
+        ;
+    }
+
+    .newbutton li input{
+        width: fit-content;
+    
+    }
+
+    .newbutton{
+        margin-top: 40px;
+        margin-right: 22px;
+    }
+
+    .elementosf{
+        text-align: center;
+        grid-template-columns: repeat(3, 150px);
+        grid-template-rows: repeat(2, 280px);
+        grid-template-areas: 
+        "columna1 columna2 columna3"
+        "columna4 none columna5";
+    }
+
+    /* PAGINA QUIENES SOMOS */
+    .quienes{
+        margin: 0;
+    }
+    .quienes img{
+        width: 80%;
+    }
+
+    /* PAGINA CONTACTO */
+    textarea{
+        width: 100%;
+    }
+
+    /* PAGINA COMO COMPRAR */
+    .comocomp{
+        margin: 0;
+        font-size: small;
+        text-align: center;
+    }
+
+    .comocomp h1{
+        text-align: center;
+    }
+    .comocomp h2{
+        text-align: center;
+    }
+
+}
+
+@media (min-width:781px) and (max-width:1000px) {
+    .productosdest{
+        height: fit-content;
+    }
+    .productos1{
+        grid-template-columns: repeat(3, 33%);
+    }
+
+    .prodaccesorios{
+        height: fit-content;
+    }
+    .productos2{
+        grid-template-columns: repeat(3, 33%);
+    }
+    .basic{
+        margin-left: 30px;
+    }
+
+    .losbuscados{
+        height: fit-content;
+    }
+    .productos3{
+        grid-template-columns: repeat(3, 33%);
+    }
+
+    .elementosf{
+        text-align: center;
+        grid-template-columns: repeat(5, 20%);
+        grid-template-areas: 
+        "columna1 columna2 columna3 columna4 columna5";
+    }
+
+    .newslet{
+        justify-content: center;
+        height: fit-content;
+        grid-template-columns: 150px 280px 200px;
+        column-gap: 20px;
+        grid-template-areas: 
+        "formtitle formtext newbutton";
+    }
+    .formtext{
+        font-size: small;
+    }
+
+    .newbutton li input{
+        font-size: small;
+    }
+
+    /* PAGINA QUIENES SOMOS */
+    .quienes{
+        margin: 0;
+    }
+    .quienes img{
+        width: 80%;
+    }
+
+    /* PAGINA CONTACTO */
+    textarea{
+        width: 100%;
+    }
+
+    /* PAGINA COMO COMPRAR */
+    .comocomp{
+        margin: 0;
+        font-size: small;
+        text-align: center;
+    }
+
+    .comocomp h1{
+        text-align: center;
+    }
+    .comocomp h2{
+        text-align: center;
+    }
+}
