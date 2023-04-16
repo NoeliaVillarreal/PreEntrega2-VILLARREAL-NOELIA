@@ -82,7 +82,8 @@ $RECYCLE.BIN/
 
 
 
-# folder
+# folder and files
 *boostrap-5.2.3-dist
+*.json
 
 # End of https://www.toptal.com/developers/gitignore/api/macos,windows,visualstudiocode
